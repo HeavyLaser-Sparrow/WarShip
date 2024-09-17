@@ -1,5 +1,5 @@
 #!/bin/bash
-cd Warship
+cd Warship-main
 javac *.java
 java Ship
 rm *.class
