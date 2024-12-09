@@ -13,6 +13,12 @@ public class Navy{
 	public void setSail(){
 		atSea = true;
 		System.out.println("Setting Sail Now");
+		int prb = (int)(Math.random() * 10) + 1; // 1-10
+		if(prb > 0){
+			enemy = true;
+			System.out.println("Oh no! An enemy approaches.");
+			System.out.println("SHOOT THEM!!!!");
+		} 
 	}
 	public void dock(int max){
 		if(atSea){
@@ -23,14 +29,6 @@ public class Navy{
 		} else {
 			System.out.println("You are already at a dock");
 		}
-		
-		int prb = (int)(Math.random() * 10) + 1; // 1-10
-		if(prb > 0){
-			enemy = true;
-			System.out.println("Oh no! An enemy approaches.");
-			System.out.println("SHOOT THEM!!!!");
-		} 
-	
 	}	
 	public boolean getSea(){return atSea;}
 	public int getHealth(){return health;}
